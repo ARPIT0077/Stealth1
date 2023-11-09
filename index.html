@@ -35,6 +35,10 @@
             </nav>
         </header>
 
+        
+
+    
+
         <!-- MAIN -->
         <main class="l-main bd-grid">
             <div class="home">
@@ -47,6 +51,72 @@
                         <a href="#" class="home__button anime-text">DOWNLOAD CV</a>
                     </div>
                 </div>
+
+                 <!-- /*-------about--------*/ -->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="assets/img/umff.jpg" >
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p> hi there, I am arpit.</p>
+
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Designing websites</li>
+                                <li><span>HTML</span><br>Expert</li>
+                                <li><span>javascript</span><br>intermediate</li>
+                                <li><span>Css</span><br>intermediate</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022 - Current </span><br>ashdbsjfsjhlshvk</li>
+                                <li><span>2020 - 2021</span><br>sfhdhdfjbkvn</li>
+                               
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021 - Present</span><br>Btech. CSE from Gndu Amritsar.</li>
+                                <li><span>2019 - 2020</span><br>Highschool from SD. Model school</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classlist.remove("active-link");
+                }
+
+                for(tablink of tablinks){
+                    tablink.classlist.remove("active-tab");
+                }
+
+                event.currentTarget.classlist.add("active-link");
+                document.getElementById(tabname).classlist.add("active-tab");
+
+                }
+         </script>
             
                 <!--Whatsaap image-->
                 <div class="home__img">
@@ -61,6 +131,8 @@
 
             </div>
         </main>
+
+           
 
         <!-- GSAP -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
