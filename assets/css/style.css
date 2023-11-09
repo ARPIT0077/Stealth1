@@ -48,7 +48,7 @@ body {
   background-color: var(--black-color);
   color: var(--white-color);
   font-weight: 700;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 h1, h2 {
@@ -225,11 +225,19 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-bottom: 1rem;
+  padding: 1rem;
+  position:fixed;
+  width: 100%;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  
+
+
 }
 
 .home__social-icon {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.33rem;
   cursor: pointer;
 }
@@ -376,7 +384,7 @@ img {
 }
 
 .tab-links.active-link::after{
-  width: 50%;
+  width: 5%;
 }
 
 .tab-contents ul li{
