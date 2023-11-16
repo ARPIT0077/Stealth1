@@ -4,6 +4,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
         <title>Landing page responsive portfolio</title>
     </head>
     <body>
@@ -24,7 +28,7 @@
                         <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">My Projects</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -51,9 +55,14 @@
                         <a href="#" class="home__button anime-text">DOWNLOAD CV</a>
                     </div>
                 </div>
+             </div>
+             
+                                
+            
 
+             
                  <!-- /*-------about--------*/ -->
-
+                 
         <div id="about">
             <div class="container">
                 <div class="row">
@@ -72,13 +81,13 @@
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>Web Development</span><br>Designing websites</li>
-                                <li><span>HTML</span><br>Expert</li>
-                                <li><span>javascript</span><br>intermediate</li>
+                                <li><span>Web Development</span><br>Designing websites</li>      
+                                <li><span>HTML</span><br>Expert</li>                             
+                                <li><span>javascript</span><br>intermediate</li>                 
                                 <li><span>Css</span><br>intermediate</li>
                                 <li><span>C++</span><br>intermediate</li>
-                                <li><span>Python</span><br>intermediate</span></li>
-                            </ul>
+                              <li><span>Python</span><br>intermediate</span></li>
+                           </ul>
                         </div>
                         <div class="tab-contents" id="experience">
                             <ul>
@@ -99,8 +108,76 @@
                 </div>
             </div>
 
-            -------
+     <!-- ------------Portfolio------------- -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="assets/img/white.jpg">
+                    <div class="layer">
+                        <h3>Wesite clone</h3>
+                        <p> I have cloned the most popular streaming website,netflix.<br>Tudum!!!!</p>
+                        <a href="#" ><i class="fa-solid fa-link fa-bounce"></i></a>
+                    </div>
+
+                </div>
+                <div class="project">
+                    <img src="assets/img/white.jpg">
+                    <div class="layer">
+                        <h3>Audience Tracker</h3>
+                        <p>This website keeps the count of audience visiting on the website.</p>
+                        <a href="#" ><i class="fa-solid fa-link fa-bounce"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="project">
+                    <img src="assets/img/white.jpg">
+                    <div class="layer">
+                        <h3>Recipes website</h3>
+                        <p> This delicious website has all of your fav recipes.<br> Bon apetite!!</p>
+                        <a href="#" ><i class="fa-solid fa-link fa-bounce"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
         </div>
+    </div>
+
+    <!-- -------------contact------------- -->
+
+    <div class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane fa-beat"></i>abc@gmail.com</p>
+                    <p><i class="fa-solid fa-phone fa-beat"></i> 0123456789</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook " ></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram "></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in "></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter "></i></a>
+                        <a href="#"><i class="fa-brands fa-github "></i></a>
+
+                    </div>
+                    <a href="assets/img/doge2.jpg" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright @ yoda. Made with <i class="fa-solid fa-heart"></i> by humans.</p>
+        </div>
+    </div>
 
         <script>
 
